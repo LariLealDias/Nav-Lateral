@@ -1,0 +1,146 @@
+<head>
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    header{
+        background-color: rgb(75, 74, 99);
+        border-radius: 0 10px 10px 0;
+        width:350px;
+        height:100%; 
+        float: left; /* adiciona o float para que o header fique à esquerda */
+    }
+
+    nav a{
+        /* border:2px solid rgb(255, 217, 3); */
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(218, 226, 233);
+
+
+
+
+    }
+    .nav-title{
+        /* border:2px solid rgb(212, 0, 0); */
+        margin: 40px 0 50px 30px;
+        font-size: 30px;
+
+
+    }
+    .nav-tabs li{
+        /* border:2px solid rgb(8, 252, 0); */
+        list-style-type: none;
+        margin: 0 0  50px 35px ;
+        color: rgb(218, 226, 233);
+
+    }
+
+    #nav-footer{
+    /* border:2px solid rgb(173, 5, 5); */
+    display: flex;
+    justify-content: center;
+    margin-top: 270px;
+
+    }
+
+    .author-photo img{
+    border:2px solid rgb(36, 24, 68);
+    border-radius: 50%;
+    width: 28px;
+    margin: 10px 25px 10px 10px;
+    }
+
+    .vetor-contact img{
+    /* border:2px solid rgb(33, 173, 5); */
+    width: 30px;
+    margin: 10px 25px 10px 10px;
+    }
+
+
+    
+    section {
+        margin-left: 350px; /* adiciona margem à esquerda igual à largura do header */
+        height: 100%;
+        overflow: hidden; /* adiciona overflow hidden para a section não ultrapassar a altura da tela */
+        background-color: rgb(42, 42, 44);
+        color: rgb(189, 173, 153);    
+    
+    }
+
+    #main-section{
+    /* background: #f0f0f5; */
+    /* border:5px solid rgb(184, 0, 0); */
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    flex: 1;
+    }
+
+    #container-main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container-main div{
+        margin: 60px;
+    }
+
+    .content-section{
+        border:2px solid rgb(206, 175, 0);
+        border-radius: 50% ;
+        padding: 60px;
+
+    }
+
+    body{
+        background-color: rgb(42, 42, 44);
+
+    }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <nav id="nav"> 
+            <div class="nav-title">
+                <h2><a href="index.html">¤ Desktop ¤</a></h2>
+            </div>
+            <div class="nav-tabs">
+                <li>Calculadora</li>
+                <li>Pomodoro</li>
+                <li>To do</li>
+            </div>
+
+            <div id="nav-footer">
+                <div class="author-photo" >
+                    <img src="foto.jpg" alt="imagem da autora com cabelo castanhos, pele clara e blusa vermelha">
+                </div>
+                <div class="vetor-contact">
+                    <a href="https://github.com/LariLealDias" target="_blank">
+                        <img src="github-preenchido.png" alt="logo GitHub">
+                    </a>
+                </div>
+                <div class="vetor-contact">
+                    <a href="https://www.linkedin.com/in/larissa-leal-dias-408455157/" target="_blank">
+                        <img src="linkedin-preenchido.png" alt="logo Linkedin">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="main-section">
+        <div id="container-main">
+            <div id="calculator" class="content-section">
+                <p>Calculadora</p>
+            </div>
+            <div id="pomodoro" class="content-section">
+                <p>pomodoro</p>
+            </div>
+            <div id="todo" class="content-section">
+                <p>to do</p>
+            </div>
+        </div>
+    </section>
+</body>
